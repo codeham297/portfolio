@@ -1,0 +1,239 @@
+@font-face {
+    font-family: 'NotoSans';
+    /* Replace with your font's name */
+    src: url('./src/fonts/NotoSans-VariableFont_wdth\,wght.ttf') format('truetype');
+    /* Add formats as needed */
+    font-weight: normal;
+    /* You can define styles like bold, italic here */
+    font-style: normal;
+}
+
+
+.profile-pic {
+    width: 50%;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+body {
+    color: #3F3F3F;
+    margin: 0px;
+    font-family: 'NotoSans', sans-serif;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: #F1F0F6;
+}
+
+h1,
+h2,
+h3 {
+    color: #2B2B2B;
+}
+
+#left {
+    flex: 1 1 30%;
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 20px 10px 20px 0px;
+
+}
+
+#left .profile-pic {
+    background-color: #F5F5F5;
+    padding: 2px;
+    border-radius: 50%;
+}
+
+li {
+    list-style: none;
+}
+
+.socials li {
+    display: inline-block;
+    ;
+}
+
+.socials li img {
+    width: 30px;
+    height: auto;
+    background-color: #FFB400;
+    border: 5px solid #FFB400;
+    border-radius: 50%;
+}
+
+ul hr {
+    background-color: #FFB400;
+    border-radius: 4px;
+    width: 95%;
+    height: 3px;
+}
+
+button {
+    background-color: #FFB400;
+    padding: 10px 20px;
+    border: none;
+    text-transform: capitalize;
+}
+
+button:hover {
+    color: #626197;
+    cursor: pointer;
+}
+
+li .detail,
+li .language,
+li .skill {
+    text-align: left;
+    display: inline-block;
+    float: left;
+    width: 30%;
+
+}
+
+li .value,
+li .proficiency {
+    text-align: right;
+    display: inline-block;
+    float: right;
+    width: 70%;
+}
+
+.additional-skills {
+    text-align: left;
+    display: inline-block;
+    float: left;
+    width: 100%;
+}
+
+#right {
+    flex: 1 1 70%;
+    background-color: #f0f0f0;
+
+}
+
+.intro {
+    position: relative;
+    background-image: url('./src/img/hamis-no-bg2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #ffffff;
+    gap: 20px;
+    padding: 20px 30px 20px 30px;
+    ;
+}
+
+.front-end {
+    color: #FFB400;
+}
+
+.intro-text {
+    display: inline-block;
+    width: 50%;
+}
+
+.intro img {
+    position: relative;
+    float: right;
+    width: 30%;
+    height: auto;
+    display: inline-block;
+}
+
+
+.services {
+    text-align: center;
+}
+
+.services p {
+    display: inline-block;
+    width: 50%;
+}
+
+.service-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-list li {
+    display: inline-block;
+    height: 200px;
+    min-width: 30%;
+    padding: 20px 0px 20px 0px;
+    background-color: #ffffff;
+}
+
+.service-list li:hover {
+    background-color: #cdcdcd;
+    color: #b85c5c;
+    cursor: pointer;
+}
+
+.service-list li img {
+    display: inline-block;
+    width: 100px;
+}
+
+#nav {
+    position: relative;
+    flex: 1 1 10%;
+    background-color: #ffffff;
+}
+
+.nav-list {
+    position: fixed;
+    top: 30%;
+    justify-self: left;
+}
+
+a {
+    color: #FFB400;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #626197;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+    .socials li {
+        width: 25%;
+    }
+
+    .service-list li {
+        width: 40%;
+    }
+
+    .intro {
+        background-image: none;
+    }
+
+    .intro-text {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .intro-text {
+        width: 100%;
+    }
+
+    .service-list li {
+        width: 100%;
+    }
+}
