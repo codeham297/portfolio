@@ -8,6 +8,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: url(./src/fonts/PlayfairDisplay-VariableFont_wght.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 .profile-pic {
     width: 50%;
@@ -32,6 +39,13 @@ h1,
 h2,
 h3 {
     color: #2B2B2B;
+}
+
+p {
+    color: #3F3F3F;
+    font-size: 1.2;
+    line-height: 1.5;
+    font-family: playfairdisplay, serif;
 }
 
 #left {
